@@ -13,6 +13,8 @@ import Feature1 from "./Feature1";
 import Feature2 from "./Feature2";
 import Feature3 from "./Feature3";
 import Banner from "./Banner";
+import Home from "./Home";
+import Search from "./Search";
 
 export {
   Navbar,
@@ -29,5 +31,6 @@ export {
   Feature1,
   Feature2,
   Feature3,
-  Banner
+  Banner,
+  Home,Search
 };

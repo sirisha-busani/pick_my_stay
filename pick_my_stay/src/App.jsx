@@ -1,10 +1,16 @@
 import React from 'react'
-import styles from './style'
 
-import {Navbar, Hero, Stats,Intro, Business,Billing,CardDeal,Testimonials,Clients,CTA, Footer, Feature1 , Feature2 , Feature3}  from './components'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,Link
+} from "react-router-dom";
+import { Home, Search } from './components';
+
 
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
+import ProductCard from './components/ProductCard';
 
 const options = [
   {name: 'Swedish', value: 'sv'},
@@ -20,45 +26,23 @@ const options = [
 
 const App = () => {
   return (
-    <div>
-      
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar/>
-        </div>
-      </div>
-      <div className={`${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero></Hero>
-        <Stats/>
-        <Intro/>
-        <SelectSearch options={options}  name="language" placeholder="Choose your language" />
-        <Feature1/>
-        <Feature2/>
-        <Feature3/>
-        </div>
-        </div>
-      <Footer/>
-      
-      
-      {/* <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero/>
-        </div>
-      </div> */}
-      {/* <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Stats/>
-          <Business/>
-          <Billing/>
-          <CardDeal/>
-          <Testimonials/>
-          <Clients/>
-          <CTA/>
-          <Footer/>
-        </div>
-      </div> */}
-    </div>
+    <Router>
+           <div className="App">
+            <ul className="App-header">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/search">Search</Link>
+              </li>
+            </ul>
+           <Routes>
+                 <Route exact path='/' element={ <Home/>}></Route>
+                 <Route exact path='/search' element={<Search/>}></Route>
+          </Routes>
+          </div>
+       </Router>
+    
   )
 }
 

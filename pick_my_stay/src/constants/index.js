@@ -19,6 +19,29 @@ export const navLinks = [
   },
 ];
 
+export const searchList = [
+  {
+    id:"search-1",
+    name:"Property 1",
+    location:"Madhapur",
+    gender:"Unisex",
+    occupancy:"Single,Double",
+    price:"₹5,000",
+    amenities:["Attached Washroom", "Window","Air Conditioning"],
+    image:"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:30/f_auto,q_auto/v1638171377/Website/CMS-Uploads/wpee2gv8i3xmaitxrmnb.jpg"
+  },
+  {
+    id:"search-2",
+    name:"Property 2",
+    location:"Madhapur",
+    gender:"Male",
+    occupancy:"Double",
+    price:"₹4,000",
+    amenities:["Attached Washroom", "Window","Spacious Cupboard"],
+    image:"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:30/f_auto,q_auto/v1638171377/Website/CMS-Uploads/wpee2gv8i3xmaitxrmnb.jpg"
+  }
+]
+
 export const features = [
   {
     id: "feature-1",
