@@ -38,7 +38,7 @@ export const searchList = [
     occupancy:"Double",
     price:"₹4,000",
     amenities:["Attached Washroom", "Window","Spacious Cupboard"],
-    image:"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:30/f_auto,q_auto/v1638171377/Website/CMS-Uploads/wpee2gv8i3xmaitxrmnb.jpg"
+    image:"https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:30/v1594886797/Website/CMS-Uploads/fj14kgfgbdkeji3ttk7u.jpg"
   }
 ]
 

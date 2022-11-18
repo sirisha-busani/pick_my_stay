@@ -11,6 +11,7 @@ import { Home, Search } from './components';
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 import ProductCard from './components/ProductCard';
+import SearchDetails from './components/SearchDetails';
 
 const options = [
   {name: 'Swedish', value: 'sv'},
@@ -28,17 +29,18 @@ const App = () => {
   return (
     <Router>
            <div className="App">
-            <ul className="App-header">
+            {/* <ul className="App-header">
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/search">Search</Link>
               </li>
-            </ul>
+            </ul> */}
            <Routes>
                  <Route exact path='/' element={ <Home/>}></Route>
                  <Route exact path='/search' element={<Search/>}></Route>
+                 <Route exact path='/details' element={<SearchDetails/>}></Route>
           </Routes>
           </div>
        </Router>

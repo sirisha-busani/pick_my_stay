@@ -99,3 +99,75 @@
     line-height: 26px;
     font-weight: bold;
 }
+.dropdown{
+    border-radius: 20px 10px !important;
+    padding:5px;
+    margin:20px 10px;
+}
+.placeholder{
+    padding-left:10px;
+}
+.mapSection{
+    padding-left: 60px;
+    width: 40%;
+}
+.mapImg{
+    border-radius: 20px;
+}
+.searchlistContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.logoheader{
+    display: flex;
+}
+.searchProperty{
+   
+    border-radius: 10px;
+    border: 2px solid rgb(210,210,210);
+    padding:10px;
+    display: flex;
+    margin-left:30px;
+    margin-bottom:30px;
+}
+.area{
+    margin:0px 30px;
+}
+.propHeaderDrop{
+    width:250px;
+    border-radius: 20px 10px !important;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.callbackButton {
+    padding: 10px;
+    background:rgb(234 0 27);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+.rightSection{
+    display: flex;
+}
+.tabs{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 100vw;
+    margin-right:20px;
+    padding:10px;
+    font-family: Poppins, sans-serif;
+    font-size:15px;
+}
+.tabsSection{
+    display: flex;
+}
+.sectionHeading{
+    margin:5px;
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.facilities{
+    margin-top: 20px;;
+}

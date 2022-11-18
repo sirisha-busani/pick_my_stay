@@ -44,6 +44,8 @@ import feature1 from "./feature1.png";
 import feature2 from "./feature2.png";
 import feature3 from "./feature3.png";
 import roomTall from "./roomTall.jpg";
+import googlemap from "./googlemap.png";
+import hostel from "./hostel.jpg";
 
 export {
   airbnb,
@@ -90,5 +92,5 @@ export {
   feature1,
   feature2,
   feature3,
-  roomTall
+  roomTall,googlemap,hostel
 };
