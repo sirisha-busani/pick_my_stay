@@ -1,0 +1,27 @@
+.facilities{
+
+}
+.tabsSection{
+    display: flex;
+}
+.tabs{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 100vw;
+    margin-right:20px;
+    padding:10px;
+    
+    font-size:15px;
+}
+
+
+.svgProfile{
+  left:0;
+  bottom: 0;
+}
+
+.modalBg {
+  background: linear-gradient(199.5deg, rgba(196, 5, 5, 0.5) -74.79%, rgba(96, 195, 173, 0) 96.63%);
+  border: 1px solid rgb(234 0 27);
+  border-radius: 1em;
+  padding: 3.2em 2em 2.4em;
+}
