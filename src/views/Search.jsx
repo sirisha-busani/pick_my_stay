@@ -105,10 +105,10 @@ function Search() {
   ]
 
 
-  //useEffect(() => {
+  useEffect(() => {
     // axios
-    //   .post('http://pmsapis.crisprsys.net/api/WebsiteAPI/GetListOfProperties', {
-    //     "clientID": "100005",
+    //   .post('https://pickmystayapi.azurewebsites.net/api/WebsiteAPI/GetListOfProperties', {
+    //     "clientID": "100003",
     //     "userName": "Admin",
     //     "location": "AMPT",
     //     "amountStartRange": 0,
@@ -122,29 +122,31 @@ function Search() {
     //   .then((response) => {
     //     console.log(response);
     //   });
-  //   var p=new Property();
-  //   p.clientID = "12334"
-  //   p.amountEndRange = 0
-  //   p.amountStartRange =0
-  //   p.location="AMPT"
-  //   p.userName = "Admin"
-  //   fetch('http://pmsapis.crisprsys.net/api/WebsiteAPI/GetListOfProperties', {
-  //     method: 'POST',
-  //     // headers: {
-  //     //   'Content-type': 'application/json; charset=UTF-8',
-  //     // },
-  //     //mode: 'no-cors', 
-  //     body: p,
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       setOptions(data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err.message);
-  //     });
-  // }, []);
+    // })
+    var p=new Property();
+    p.clientID = "100003"
+    p.amountEndRange = 0
+    p.amountStartRange =0
+    p.location="AMPT"
+    p.userName = "Admin"
+    fetch('https://pickmystayapi.azurewebsites.net/api/WebsiteAPI/GetListOfProperties', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+        'Accept': '*/*'
+      },
+     
+      body: p,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setOptions(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
   return (
     <div>
       <div className="container">
