@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 function Details() {
     const [data, setData] = useState([]);
     const {facilityCode} = useParams();
-    console.log("On routeParams" + facilityCode)
+    console.log("On routeParams $$$$" + facilityCode)
     useEffect(() => {
         fetch(`https://pickmystayapi.azurewebsites.net/api/WebsiteAPI/GetPropertyData?ClientID=100005&UserName=Admin&FacilityCode=${facilityCode}`)
             .then((response) => response.json())
