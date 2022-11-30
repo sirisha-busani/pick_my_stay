@@ -11,7 +11,7 @@ function Details() {
     const {facilityCode} = useParams();
     console.log("On routeParams $$$$" + facilityCode)
     useEffect(() => {
-        fetch(`https://pickmystayapi.azurewebsites.net/api/WebsiteAPI/GetPropertyData?ClientID=100005&UserName=Admin&FacilityCode=${facilityCode}`)
+        fetch(`https://pickmystayapi.azurewebsites.net/api/WebsiteAPI/GetPropertyData?ClientID=100003&UserName=Admin&FacilityCode=${facilityCode}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
