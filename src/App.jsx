@@ -11,6 +11,7 @@ import {
 import Team from './views/Team'
 import About from './views/About'
 import Partner from './views/Partner'
+import Test from './components/Test'
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
           <Route exact path='/team' element={<Team/>}></Route>
           <Route exact path='/about' element={<About/>}></Route>
           <Route exact path='/partner' element={<Partner/>}></Route>
+          <Route exact path='/test' element={<Test/>}></Route>
    </Routes>
    </div>
 </Router>
