@@ -11,7 +11,9 @@ function Details() {
     const {facilityCode} = useParams();
     console.log("On routeParams" + facilityCode)
     useEffect(() => {
-        fetch(`http://pmsapis.crisprsys.net/api/WebsiteAPI/GetPropertyData?ClientID=100005&UserName=Admin&FacilityCode=${facilityCode}`)
+        fetch(`http://pmsapis.crisprsys.net/api/WebsiteAPI/GetPropertyData?ClientID=100005&UserName=Admin&FacilityCode=${facilityCode}`,{
+            referrerPolicy: "unsafe_url" 
+        })
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
